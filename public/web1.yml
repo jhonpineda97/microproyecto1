@@ -1,0 +1,47 @@
+config: {}
+networks: []
+storage_pools: []
+profiles: []
+cluster:
+  server_name: web1
+  enabled: true
+  member_config:
+  - entity: storage-pool
+    name: local
+    key: source
+    value: ""
+    description: source property for storage pool local
+  cluster_address: 192.168.100.2:8443
+  server_address: 192.168.100.3:8443
+  cluster_password: "vagrant"
+  cluster_certificate_path: ""
+  cluster_token: ""
+  cluster_certificate: "-----BEGIN CERTIFICATE-----
+
+
+MIICDjCCAZOgAwIBAgIRAIYedjsXLdC7FMlvqCFwfvcwCgYIKoZIzj0EAwMwNzEc
+
+MBoGA1UEChMTbGludXhjb250YWluZXJzLm9yZzEXMBUGA1UEAwwOcm9vdEBwcmlu
+
+Y2lwYWwwHhcNMjIwNDI5MjEzNzM5WhcNMzIwNDI2MjEzNzM5WjA3MRwwGgYDVQQK
+
+ExNsaW51eGNvbnRhaW5lcnMub3JnMRcwFQYDVQQDDA5yb290QHByaW5jaXBhbDB2
+
+MBAGByqGSM49AgEGBSuBBAAiA2IABL4+wDKV8hHTgCkhzX76Rgyn2eBW56NjS7y3
+
+Sz3jPLqIqIoQrt/lJP5+GTj8eltA7/tloWXuls7oxE88q1ag48BVYCgdEdM9OcJt
+
+CZH7sVl2XDERRaeENpiRBOu/XxKEDKNjMGEwDgYDVR0PAQH/BAQDAgWgMBMGA1Ud
+
+JQQMMAoGCCsGAQUFBwMBMAwGA1UdEwEB/wQCMAAwLAYDVR0RBCUwI4IJcHJpbmNp
+
+cGFshwR/AAABhxAAAAAAAAAAAAAAAAAAAAABMAoGCCqGSM49BAMDA2kAMGYCMQDL
+
+0lqOtVlKXc/S89T1R5hyV6FMeINGFxSeZ5XNngSWbETkzCWg/b+VVKY3YTLzxjUC
+
+MQDrqlFyAwDdCXaCNpHaFNYYij7VNlBwPZlofPaO3v2SR1x9+z61ytbjftDi8Xwt
+
+1HY=
+
+-----END CERTIFICATE-----
+"

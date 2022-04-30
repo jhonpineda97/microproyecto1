@@ -1,0 +1,33 @@
+config: {}
+networks: []
+storage_pools: []
+profiles: []
+cluster:
+  server_name: web1
+  enabled: true
+  member_config:
+  - entity: storage-pool
+    name: local
+    key: source
+    value: ""
+    description: '"source" property for storage pool "local"'
+  cluster_address: 192.168.100.2:8443
+  server_address: 192.168.100.3:8443
+  cluster_password: ""
+  cluster_certificate_path: ""
+  cluster_token: ""
+  cluster_certificate: |
+    -----BEGIN CERTIFICATE-----
+    MIICDTCCAZOgAwIBAgIRAIryASm7ub2REUXSZK2E3DUwCgYIKoZIzj0EAwMwNzEc
+    MBoGA1UEChMTbGludXhjb250YWluZXJzLm9yZzEXMBUGA1UEAwwOcm9vdEBwcmlu
+    Y2lwYWwwHhcNMjIwNDI3MjA1NjIzWhcNMzIwNDI0MjA1NjIzWjA3MRwwGgYDVQQK
+    ExNsaW51eGNvbnRhaW5lcnMub3JnMRcwFQYDVQQDDA5yb290QHByaW5jaXBhbDB2
+    MBAGByqGSM49AgEGBSuBBAAiA2IABAKXvpMqIcInU/RmYswXCbziDrK5K2EBE7KJ
+    PTVP9hLno1tmgU079J17SkI8+mrdb+JnmfuAFWJ6RAgBjU8OYOK02J+BSG4+AbA6
+    97PqcXpzpImhEyFttHVYmuNpA8TOyKNjMGEwDgYDVR0PAQH/BAQDAgWgMBMGA1Ud
+    JQQMMAoGCCsGAQUFBwMBMAwGA1UdEwEB/wQCMAAwLAYDVR0RBCUwI4IJcHJpbmNp
+    cGFshwR/AAABhxAAAAAAAAAAAAAAAAAAAAABMAoGCCqGSM49BAMDA2gAMGUCMCIq
+    zkZYS53DOi12O9Ghj7EgfV3W/KMS6+7ZTHXiG0KQG34OKyTTFhN9yE/0RQnrpwIx
+    AKQCdaC6104TrfVIkUoErJbZNwwJ2DN/JuYEhuxLRlSZnFGpJB9oZcILklg8CGhs
+    bg==
+    -----END CERTIFICATE-----
